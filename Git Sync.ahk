@@ -6,7 +6,7 @@ CheckForUpdates()
 CheckForUpdates() {
     Try {		
 		WinHttp := ComObject("WinHttp.WinHttpRequest.5.1")
-		WinHttp.Open("GET", "https://raw.githubusercontent.com/The-CoDingman/Git-Sync/refs/heads/main/Git%20Sync%.ahk")
+		WinHttp.Open("GET", "https://raw.githubusercontent.com/The-CoDingman/Git-Sync/refs/heads/main/Git%20Sync.ahk")
 		WinHttp.Send()
 		WinHttp.WaitForResponse()
 		ResponseText := WinHttp.ResponseText
